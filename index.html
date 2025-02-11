@@ -83,3 +83,69 @@
 
 </body>
 </html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will You Be My Valentine?</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background-color: #ffe6e6;
+        }
+        h1 {
+            color: #ff4d4d;
+        }
+        img {
+            width: 300px;
+            height: auto;
+            border-radius: 15px;
+        }
+        .button-container {
+            margin-top: 20px;
+        }
+        button {
+            font-size: 18px;
+            padding: 10px 20px;
+            margin: 10px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .yes {
+            background-color: #4CAF50;
+            color: white;
+        }
+        .no {
+            background-color: #FF4D4D;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Will You Be My Valentine? ❤️</h1>
+    <img id="puppyImage" src="https://t4.ftcdn.net/jpg/11/65/88/85/360_F_1165888545_eYpGNm2JemZxoMSXG3FpY9FtX8G6EM2J.jpg" alt="Cute Puppy">
+    
+    <div class="button-container">
+        <button class="yes" onclick="sayYes()">Yes!</button>
+        <button class="no" onclick="sayNo()">No</button>
+    </div>
+
+    <script>
+        function sayYes() {
+            alert("Yay! 🥰 Can't wait for Valentine's Day with you!");
+        }
+
+        function sayNo() {
+            document.getElementById("puppyImage").src = "https://karlamclaren.com/wp-content/uploads/2010/03/angry-puppy-1.jpg";
+            alert("😠 Aww, that makes the puppy sad!");
+        }
+    </script>
+
+</body>
+</html>
